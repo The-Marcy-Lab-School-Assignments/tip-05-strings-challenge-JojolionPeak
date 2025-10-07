@@ -36,9 +36,9 @@ const capitalizeWords = (sentence) => {
     let newSentence = ""
     for (i = 0; i < sentence.length; i++) {
         if (sentence[i] === sentence[0]) {
-            newSentence += sentence[i].toUpperCase;
+            newSentence += sentence[i].toUpperCase();
         } else if (sentence[i] === " ") {
-            newSentence += sentence[i] + sentence[i + 1].toUpperCase;
+            newSentence += sentence[i] + sentence[i + 1].toUpperCase();
             i++;
         } else if (sentence[i] !== " ") {
             newSentence += sentence[i];
